@@ -833,7 +833,7 @@ p, h1, h2, h3, h4, h5, h6, ul, li {
   width: 280px;
   height: 280px;
   border-radius: 150px;
-  background-image: url("../img/hero_photo.jpg");
+  background-image: url("../img/hero_photo.png");
   background-size: cover;
 }
 
