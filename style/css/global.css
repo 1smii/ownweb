@@ -624,6 +624,12 @@ p, h1, h2, h3, h4, h5, h6, ul, li {
   z-index: 100;
 }
 
+.header__logo {
+  float: left;
+  padding: 8px 0;
+  padding-left: 35px;
+}
+
 .header__navigation a {
   display: block;
   padding: 8px 0;
