@@ -1,8 +1,5 @@
 'use strict';
 
-
-
-
 /*------------------------------------*\
   plugins
 \*------------------------------------*/
@@ -14,9 +11,6 @@ var plumber       = require('gulp-plumber');
 var sass          = require('gulp-sass');
 var autoprefixer  = require('gulp-autoprefixer');
 var sourcemaps    = require('gulp-sourcemaps');
-
-
-
 
 
 /*------------------------------------*\
@@ -34,9 +28,6 @@ var sourcemaps    = require('gulp-sourcemaps');
   default ___________ runs [server, watch]
 
 */
-
-
-
 
 
 /*------------------------------------*\
@@ -82,10 +73,6 @@ var autoprefixerconfig = {
     'bb >= 10'
   ]
 };
-
-
-
-
 
 /*------------------------------------*\
   cssbuild

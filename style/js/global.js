@@ -1,20 +1,4 @@
 /*------------------------------------*\
-	Information
-\*------------------------------------*/
-
-	/*
-	 * Scripts by Dominik Serafin
-	 * * http://serafin.io/
-	 * * dominikdsgnr@gmail.com
-	 *
-	 */
-
-
-
-
-
-
-/*------------------------------------*\
 	Document Ready
 \*------------------------------------*/
 $(document).ready(function(){
@@ -30,11 +14,6 @@ $(document).ready(function(){
 	function ShowcaseHeightSet() {
 		$(".showcase__stage-wrapper").css("height", $(".showcase__stage--active").height() );
 	}
-
-
-
-
-
 
 	/*------------------------------------*\
 		Set hero and showcase heights
@@ -76,11 +55,6 @@ $(document).ready(function(){
 		ShowcaseHeightSet();
 	});
 
-
-
-
-
-
 	/*------------------------------------*\
 		Run showcase height function
 		after image on active slide
@@ -91,11 +65,6 @@ $(document).ready(function(){
 	}).each(function() {
 		if(this.complete) $(this).load();
 	});
-
-
-
-
-
 
 	/*------------------------------------*\
 		Hamburger navigation in header
@@ -112,10 +81,6 @@ $(document).ready(function(){
 	$("html, .header__navigation a").click(function(event) {
 		$(".header__navigation").slideUp(100);
 	});
-
-
-
-
 
 	/*------------------------------------*\
 		Smooth Scroll
@@ -145,11 +110,6 @@ $(document).ready(function(){
 
 		window.location.hash = ThisHref;
 	});
-
-
-
-
-
 
 	/*------------------------------------*\
 		Portfolio Showcase
@@ -204,10 +164,6 @@ $(document).ready(function(){
 		ShowcaseHeightSet();
 	});
 
-
-
-
-
 	/*------------------------------------*\
 		Project details 'read more'
 		and 'read less' buttons
@@ -228,86 +184,6 @@ $(document).ready(function(){
 		//set height
 		ShowcaseHeightSet();
 	});
-
-
-
-
-
-
-	/*------------------------------------*\
-		Contact form AJAX script
-		which communicates with
-		contact_form.php
-	\*------------------------------------*/
-	$("#contact__submit").click(function(event) {
-		event.preventDefault();
-
-		var proceed = true;
-
-		if(proceed) //everything looks good! proceed...
-		{
-			//get input field values data to be sent to server
-			post_data = {
-				'sender_name'      : String( $('#sender_name').val() ),
-				'sender_email'     : String( $('#sender_email').val() ),
-				'message_content'  : String( $('#message_content').val() )
-			};
-
-
-			//Ajax post data to server
-			$.post('php/contact_form.php', post_data, function(response)
-			{
-
- 				//load json data from server and output message
-				//it probably should be refactored a bit...
- 				switch (response.type) {
-
- 					case "error_message_content":
-						$(".contact__response-ajax-text").hide();
-						$(".contact__textarea-wrapper .contact__response-ajax-text").css("display","inline-block").text(response.text);
-
-						$("#message_content, #sender_name, #sender_email").css("box-shadow","none");
-						//$("#message_content").css("box-shadow","0 0 10px 0 rgba(255,0,0,0.5)");
-						break;
-
- 					case "error_sender_name":
-						$(".contact__response-ajax-text").hide();
-						$(".contact__input-wrapper--name .contact__response-ajax-text").css("display","inline-block").text(response.text);
-
-						$("#message_content, #sender_name, #sender_email").css("box-shadow","none");
-						//$("#sender_name").css("box-shadow","0 0 10px 0 rgba(255,0,0,0.5)");
-						break;
-
- 					case "error_sender_email":
-						$(".contact__response-ajax-text").hide();
-						$(".contact__input-wrapper--email .contact__response-ajax-text").css("display","inline-block").text(response.text);
-
-						$("#message_content, #sender_name, #sender_email").css("box-shadow","none");
-						//$("#sender_email").css("box-shadow","0 0 10px 0 rgba(255,0,0,0.5)");
-						break;
-
-					default:
-						$(".contact__response-ajax-text").hide();
-
-						$("#message_content, #sender_name, #sender_email").css("box-shadow","none");
-						$(".contact__button-wrapper").removeClass("ghost-button");
-						$(".contact__button-wrapper").addClass("contact__button-wrapper--sent");
-						$(".contact__paper-plane-wrapper").addClass("contact__paper-plane-wrapper--takeoff");
-						$(".contact__response-description--success").html(response.text);
-						$(".contact__response--success").delay(500).fadeIn(100);
-						//$(".contact__form input, .contact__form textarea").val("");
-						$("#contact__submit").unbind('click');
-				}
-
-			}, 'json');
-
-		}
-	});
-
-
-
-
-
 
 	/*------------------------------------*\
 		Hat tip
