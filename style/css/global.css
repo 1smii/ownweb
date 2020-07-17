@@ -2939,9 +2939,6 @@ p, h1, h2, h3, h4, h5, h6, ul, li {
 }
 
 .custom__divs {
-  margin-top: auto;
-  margin-left: 70px;
-  margin-right: auto;
-  margin-bottom: auto;
+  text-align: center;
 }
 /*# sourceMappingURL=global.css.map */
