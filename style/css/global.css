@@ -729,7 +729,7 @@ p, h1, h2, h3, h4, h5, h6, ul, li {
   z-index: -400;
   width: 100%;
   height: 100%;
-  background-image: url("../img/hero_background.jpg");
+  background-image: url("../img/hero_background.png");
   background-repeat: repeat;
 }
 
