@@ -62,7 +62,7 @@
 					<div class="header__navigation-element  header__navigation-element--experience">Skills</div>
 				</a>
 				<a href="#features" class="js-smooth-scroll">
-					<div class="header__navigation-element  header__navigation-element--features">Guarantees...</div>
+					<div class="header__navigation-element  header__navigation-element--features">Education & Work Experience</div>
 				</a>
 				<a href="#realizations" class="js-smooth-scroll">
 					<div class="header__navigation-element  header__navigation-element--realizations">Portfolio...</div>
@@ -88,22 +88,22 @@
 	<!-- End Header -->
 
 	<!-- First Fixed "Hero" Section -->
-	<section id="hero" class="hero">
+	<section id="hero monster" class="hero">
 		<div class="hero__background">&nbsp;</div>
 		<div class="hero__gradient">&nbsp;</div>
 		<div class="hero__pattern">&nbsp;</div>
 		<div class="hero__content">
 			<div class="hero__content-wrapper">
-				<div class="hero__title-wrapper">
+				<div class="hero__title-wrapper an_fade">
 					<div class="hero__title-large">Hello! I'm</div>
 					<div class="hero__title-small">Ismael Almellón,<br/><h5>System Administrator.</h5></div>
 				</div>
 				<div class="hero__photo-wrapper">
-					<div class="hero__photo">
+					<div class="hero__photo an_fade">
 						<!--<div class="hero__hat">&nbsp;</div>-->
 					</div>
 				</div>
-				<div class="hero__description">
+				<div class="hero__description an_fade1">
 					Resolutivo, pro-activo y dinámico.<br/>Acostumbrado a trabajar en equipo, con muchas ganas de crecer, aprender y aportar mis conocimientos.
 					<br/>
 					<i class="fa fa-envelope"></i> ismael.almellon@gmail.com
@@ -111,9 +111,9 @@
 					<i class="fa fa-map-marker"></i> Málaga, Spain.
 				</div>
 				
-				<div class="hero__call-to-action">
+				<!--<div class="hero__call-to-action">
 					<a target="_blank" href="pdfs/ismael_cv.pdf" download="Ismael Almellón CV" class="hero__button  ghost-button  ghost-button--hero">Download CV <i class="fa fa-download"></i></a>
-				</div>
+				</div>-->
 			</div>
 		</div>
 	</section>
@@ -124,7 +124,7 @@
 		<!-- "Experience" Section -->
 		<section id="experience" class="experience">
 			<div class="experience__hollow-arrow">&nbsp;</div>
-			<div class="experience__wrapper">
+			<div class="experience__wrapper hideme">
 				<div class="section-header">
 					<div class="section-header__title  section-header__title--experience">My Skills</div>
 					<div class="section-header__subtitle">Software and technologies that I'm experienced in</div>
@@ -167,9 +167,13 @@
 						<div class="experience__icon-description">PostgreSQL</div>
 					</div>
 					<div class="experience__icon">
+						<div class="custom__divs"><img src="style/img/tech/asterisk.png"></div>
+						<div class="experience__icon-description">VoIP</div>
+					</div>
+					<!--<div class="experience__icon">
 						<div class="custom__divs"><img src="style/img/tech/bash.png"></div>
 						<div class="experience__icon-description">Bash Scripting</div>
-					</div>
+					</div>-->
 				</div>
 			</div>
 		</section>
@@ -177,80 +181,87 @@
 
 		<!-- "Features" Section -->
 		<section id="features" class="features">
-			<div class="features__wrapper">
+			<div class="features__wrapper hideme">
 				<div class="section-header">
-					<div class="section-header__title  section-header__title--features">I Provide Websites...</div>
-					<div class="section-header__subtitle">I try my best to fulfill these points for the greatest possible customer satisfaction</div>
+					<div class="section-header__title  section-header__title--features">Education & Work Experience</div>
+					<!--<div class="section-header__subtitle"></div>-->
 				</div>
 				<div class="features__elements-wrapper">
+					
+					<!--Education-->
+					
 					<div class="features__element">
-						<div class="features__image  features__image--mobile">&nbsp;</div>
+						<div class="features__image"><img src="style/img/edu/school.png"></div>
 						<div class="features__text">
-							<div class="features__title">Responsive and Mobile Friendly</div>
-							<div class="features__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ducimus, nemo corrupti voluptas ea! Placeat quidem magnam.</div>
+							<div class="features__title">Education</div>
+							<div class="features__description"><strong>Degree on Network computer systems administration</strong> <a style="color:gold; font-style:italic;" href="https://politecnicomalaga.com/">Politécnico Jesús Marín, Málaga.</a><br/>
+								<div>2017 - 2020</div>
+							</div>
+						</div>
+						<!--Certificates-->
+						<div class="otherlicence">
+							<!--<div class="features__image"><img src="style/img/edu/onlineclass.png"></div>-->
+							<div>
+								<div class="features__title">Licenses and certificates</div>
+								<div class="features__description">
+									<div style="color:gold; font-style:italic;"><a href="https://www.udemy.com/">Udemy</a></div>
+									<div style="font-style: bold; font-size: 15px; text-align: justify;">
+										· DevOps - Automating AWS infrastructures with Terraform. 2020
+									</div><hr style="opacity: 0.2;"/>
+									<div style="color:gold; font-style:italic;"><a href="https://openwebinars.net/">OpenWebinars</a></div>
+									<div style="font-style: bold; font-size: 15px; text-align: justify;">
+										· Course - Terraform online. 2020 <br/>
+										· General basics: Orchestration and IT automation. 2020 <br/>
+										· Course - Ansible. 2020 <br/>
+										· Docker - Introduction. 2020 <br/>
+										· Course - Basic PHP online. 2019 <br/>
+										· Course - Vagrant online. 2019 <br/>
+										· Course - JavaScript for beginners. 2019 <br/>
+										· SSH - A must for modern times. 2019
+									</div><hr style="opacity: 0.2;"/>
+									<div style="color:gold; font-style:italic;"><a href="https://www.cisco.com/">Cisco</a></div>
+									<div style="font-style: bold; font-size: 15px; text-align: justify;">
+										· IT ESSENTIALS: PC Hardware & Software. 2018 <br/>
+										· CCNA R&S: Routing and Switching Essentials. 2017 <br/>
+										· CCNA R&S: Introduction to Network. 2017
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
+
+					<!--Work-->
+
 					<div class="features__element">
-						<div class="features__image  features__image--newest">&nbsp;</div>
+						<div class="features__image"><img src="style/img/edu/workexp.png"></div>
 						<div class="features__text">
-							<div class="features__title">Made with Newest Technologies</div>
-							<div class="features__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+							<div class="features__title">Work Experience</div>
+							<div class="features__description"><strong>Alameda Motor S.L.</strong>
+								<div style="color:gold; font-style:italic;">Actually</div><hr style="opacity: 0.2;"/>
+								<div style="font-size: 15px; text-align: justify;"><strong>Responsibilities :</strong><br/>
+									· Customer Service. <br/>
+									· Customer Support. <br/>
+									· QA Tester of an online application, ensuring that the quality requirements for the customer are met. <br/>
+									· Control over cPanel of the web application, solving problems at administrator level. <br/>
+									· IT Support & HelpDesk.
+								</div>
+							</div>
 						</div>
-					</div>
-					<div class="features__element">
-						<div class="features__image  features__image--intuitive">&nbsp;</div>
-						<div class="features__text">
-							<div class="features__title">Visually Attractive and Intuitive</div>
-							<div class="features__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ducimus, nemo corrupti voluptas ea.</div>
-						</div>
-					</div>
-					<div class="features__element">
-						<div class="features__image  features__image--browsers">&nbsp;</div>
-						<div class="features__text">
-							<div class="features__title">Compatible with Every Browser</div>
-							<div class="features__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ducimus, nemo corrupti voluptas ea! Placeat quidem magnam, natus est eos fugit doloremque dolorum.</div>
-						</div>
-					</div>
-					<div class="features__element">
-						<div class="features__image  features__image--clients">&nbsp;</div>
-						<div class="features__text">
-							<div class="features__title">Unique for Every Client</div>
-							<div class="features__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ducimus, nemo corrupti voluptas ea! Placeat quidem magnam.</div>
-						</div>
-					</div>
-					<div class="features__element">
-						<div class="features__image  features__image--fast">&nbsp;</div>
-						<div class="features__text">
-							<div class="features__title">Fast and Performant</div>
-							<div class="features__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ducimus, nemo corrupti voluptas ea placeat quidem.</div>
-						</div>
-					</div>
-					<div class="features__element">
-						<div class="features__image  features__image--seo">&nbsp;</div>
-						<div class="features__text">
-							<div class="features__title">Search Engine Friendly</div>
-							<div class="features__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ducimus, nemo corrupti.</div>
-						</div>
-					</div>
-					<div class="features__element">
-						<div class="features__image  features__image--secure">&nbsp;</div>
-						<div class="features__text">
-							<div class="features__title">Secure</div>
-							<div class="features__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ducimus, nemo corrupti voluptas ea! Placeat quidem magnam, natus.</div>
-						</div>
-					</div>
-					<div class="features__element">
-						<div class="features__image  features__image--semantic">&nbsp;</div>
-						<div class="features__text">
-							<div class="features__title">Semantic</div>
-							<div class="features__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ducimus, nemo corrupti voluptas ea! Placeat quidem magnam, natus est eos fugit doloremque.</div>
-						</div>
-					</div>
-					<div class="features__element">
-						<div class="features__image  features__image--sourcefiles">&nbsp;</div>
-						<div class="features__text">
-							<div class="features__title">Provided with Source Code</div>
-							<div class="features__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ducimus, nemo corrupti voluptas ea.</div>
+						<!--Other work-->
+						<div class="otherexp">
+							<!--<div class="features__image"><img src="style/img/edu/gasexp.png"></div>-->
+							<div>
+								<div class="features__description"><strong>Alameda Motor S.L.</strong>
+									<div style="color:gold; font-style:italic;">07/19 - 09/19</div><hr style="opacity: 0.2;"/>
+									<div style="font-size: 15px; text-align: justify;"><strong>Responsibilities :</strong><br/>
+										· Customer Support. <br/>
+										· Stock control. <br/>
+										· Product replacement. <br/>
+										· Cash count. <br/>
+										· Mounting of exhibitors.
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -269,24 +280,16 @@
 
 				<div class="showcase">
 					<div class="showcase__thumbnails-wrapper">
-
 						<!-- normal -->
 						<img data-project="p1" class="showcase__thumb  showcase__thumb--first  showcase__thumb--active" src="content/project01_thumb.jpg">
 						<img data-project="p2" class="showcase__thumb" src="content/project_placeholder_thumb.jpg">
-						<img data-project="p3" class="showcase__thumb" src="content/project_placeholder_thumb.jpg">
-						<img data-project="p4" class="showcase__thumb" src="content/project_placeholder_thumb.jpg">
-						<img data-project="p5" class="showcase__thumb" src="content/project_placeholder_thumb.jpg">
 
 						<!-- blank template
 						<div data-project="p5" class="showcase__thumb  showcase__thumb--blank">&nbsp;</div>
 						-->
-
 					</div>
 
-
-
 					<div class="showcase__stage-wrapper">
-
 						<!-- project 1 -->
 						<div data-project="p1" class="showcase__stage  showcase__stage--active">
 							<div class="showcase__slider">
@@ -401,146 +404,11 @@
 								<a target="_blank" href="//example.com" class="showcase__button  ghost-button  ghost-button--realizations">Visit Website</a>
 							</div>
 						</div>
-
-						<!-- project 3 -->
-						<div data-project="p3" class="showcase__stage">
-							<div class="showcase__slider">
-								<ul class="rslides">
-									<li><img src="content/project_placeholder_slide.jpg"></li>
-								</ul>
-							</div>
-							<div class="showcase__infos-wrapper">
-								<div class="showcase__title">Third Project</div>
-								<div class="showcase__point">
-									<div class="showcase__point-title">Section Title</div>
-									<div class="showcase__point-description">
-										Design and Development
-									</div>
-								</div>
-								<div class="showcase__point">
-									<div class="showcase__point-title">Section Title</div>
-									<div class="showcase__point-description">
-										HTML, CSS, SASS, JavaScript, jQuery
-									</div>
-								</div>
-								<div class="showcase__point">
-									<div class="showcase__point-title">Section Title</div>
-									<div class="showcase__point-details-excerpt">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip<span class="showcase__ellipsis">...</span>
-										<span class="showcase__readmore">more</span>
-									</div>
-									<div class="showcase__point-details-full">
-										ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-										<span class="showcase__readless">less</span>
-									</div>
-								</div>
-								<a target="_blank" href="//example.com" class="showcase__button  ghost-button  ghost-button--realizations">Visit Website</a>
-							</div>
-						</div>
-
-						<!-- project 4 -->
-						<div data-project="p4" class="showcase__stage">
-							<div class="showcase__slider">
-								<ul class="rslides">
-									<li><img src="content/project_placeholder_slide.jpg"></li>
-									<li><img src="content/project_placeholder_slide.jpg"></li>
-									<li><img src="content/project_placeholder_slide.jpg"></li>
-									<li><img src="content/project_placeholder_slide.jpg"></li>
-								</ul>
-							</div>
-							<div class="showcase__infos-wrapper">
-								<div class="showcase__title">Fourth Project</div>
-								<div class="showcase__point">
-									<div class="showcase__point-title">Section Title</div>
-									<div class="showcase__point-description">
-										Design and Front-End Development
-									</div>
-								</div>
-								<div class="showcase__point">
-									<div class="showcase__point-title">Section Title</div>
-									<div class="showcase__point-description">
-										HTML, CSS, SASS, JavaScript, jQuery
-									</div>
-								</div>
-								<div class="showcase__point">
-									<div class="showcase__point-title">Section Title</div>
-									<div class="showcase__point-details-excerpt">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip<span class="showcase__ellipsis">...</span>
-										<span class="showcase__readmore">more</span>
-									</div>
-									<div class="showcase__point-details-full">
-										ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-										<span class="showcase__readless">less</span>
-									</div>
-								</div>
-								<a target="_blank" href="//example.com" class="showcase__button  ghost-button  ghost-button--realizations">Visit Website</a>
-							</div>
-						</div>
-
-						<!-- project 5 -->
-						<div data-project="p5" class="showcase__stage">
-							<div class="showcase__slider">
-								<ul class="rslides">
-									<li><img src="content/project_placeholder_slide.jpg"></li>
-									<li><img src="content/project_placeholder_slide.jpg"></li>
-									<li><img src="content/project_placeholder_slide.jpg"></li>
-									<li><img src="content/project_placeholder_slide.jpg"></li>
-								</ul>
-							</div>
-							<div class="showcase__infos-wrapper">
-								<div class="showcase__title">Fifth Project</div>
-								<div class="showcase__point">
-									<div class="showcase__point-title">Section Title</div>
-									<div class="showcase__point-description">
-										Design and Front-End Development
-									</div>
-								</div>
-								<div class="showcase__point">
-									<div class="showcase__point-title">Section Title</div>
-									<div class="showcase__point-description">
-										HTML, CSS, SASS, JavaScript, jQuery
-									</div>
-								</div>
-								<div class="showcase__point">
-									<div class="showcase__point-title">Section Title</div>
-									<div class="showcase__point-details-excerpt">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip<span class="showcase__ellipsis">...</span>
-										<span class="showcase__readmore">more</span>
-									</div>
-									<div class="showcase__point-details-full">
-										ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-										<span class="showcase__readless">less</span>
-									</div>
-								</div>
-								<a target="_blank" href="//example.com" class="showcase__button  ghost-button  ghost-button--realizations">Visit Website</a>
-							</div>
-						</div>
-
-
 					</div>
-
-
-
 				</div>
 			</div>
 		</section>
 		<!-- End "Realizations" Section - With Projects -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 		<!-- "Contact" Section -->
 		<section id="contact" class="contact">
@@ -611,6 +479,9 @@
 		<!-- Footer -->
 		<footer id="footer" class="footer">
 			<div class="footer__wrapper">
+				<div class="hero__call-to-action">
+					<a target="_blank" href="pdfs/ismael_cv.pdf" download="Ismael Almellón CV" class="hero__button  ghost-button  ghost-button--hero">Download CV <i class="fa fa-download"></i></a>
+				</div>
 				
 			</div>
 		</footer>
