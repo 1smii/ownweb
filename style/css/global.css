@@ -1974,7 +1974,7 @@ p, h1, h2, h3, h4, h5, h6, ul, li {
     width: 45.9%;
     margin-top: 40px;
     margin-left: 2%;
-    height: 160px;
+    height: auto;
   }
   .features__image {
     background-size: 90px 90px;
