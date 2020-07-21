@@ -39,10 +39,6 @@
 	}
 
 
-
-
-
-
 /*------------------------------------*\
     .ghost-button modifiers
 \*------------------------------------*/
@@ -61,9 +57,3 @@
 	}
 }
 
-.ghost-button--contact {
-	&:hover::before, &:focus::before {
-		width: 600px;
-		height: 600px;
-	}
-}
