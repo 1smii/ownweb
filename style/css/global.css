@@ -648,7 +648,7 @@ p, h1, h2, h3, h4, h5, h6, ul, li {
   background-image: url("../img/title_square.svg");
 }
 
-.header__navigation-element--features {
+.header__navigation-element--s {
   background-image: url("../img/title_circle.svg");
 }
 
@@ -1022,57 +1022,8 @@ p, h1, h2, h3, h4, h5, h6, ul, li {
   float: left;
   width: 20%;
   height: 120px;
-  background-image: url("../img/exp_html5.svg");
   background-size: 100px 100px;
   background-position: 50%;
-}
-
-.experience__icon--html5 {
-  background-image: url("../img/exp/exp_html5.svg");
-}
-
-.experience__icon--css3 {
-  background-image: url("../img/exp/exp_css3.svg");
-}
-
-.experience__icon--javascript {
-  background-image: url("../img/exp/exp_javascript.svg");
-}
-
-.experience__icon--sass {
-  background-image: url("../img/exp/exp_sass.svg");
-}
-
-.experience__icon--jquery {
-  background-image: url("../img/exp/exp_jquery.svg");
-}
-
-.experience__icon--wordpress {
-  background-image: url("../img/exp/exp_wordpress.svg");
-}
-
-.experience__icon--git {
-  background-image: url("../img/exp/exp_git.svg");
-}
-
-.experience__icon--photoshop {
-  background-image: url("../img/exp/exp_photoshop.svg");
-}
-
-.experience__icon--illustrator {
-  background-image: url("../img/exp/exp_illustrator.svg");
-}
-
-.experience__icon--fireworks {
-  background-image: url("../img/exp/exp_fireworks.svg");
-}
-
-.experience__icon--bootstrap {
-  background-image: url("../img/exp/exp_bootstrap.svg");
-}
-
-.experience__icon--foundation {
-  background-image: url("../img/exp/exp_foundation-glasses.svg");
 }
 
 .experience__icon-description {
@@ -1093,9 +1044,9 @@ p, h1, h2, h3, h4, h5, h6, ul, li {
 /*------------------------------------*    .features
 \*------------------------------------*/
 .features {
-  background-color: rgba(59, 62, 82, 0.99);
-  background-image: -webkit-linear-gradient(top right, #354b15, #1b5752 2100px);
-  background-image: linear-gradient(to bottom left, #354b15, #1b5752 2100px);
+  background-color: rgba(192, 195, 212, 0.99);
+  background-image: -webkit-linear-gradient(top right, #005064, #3f2b46 2100px);
+  background-image: linear-gradient(to bottom left, #005064, #3f2b46 2100px);
   position: relative;
   overflow: hidden;
 }
@@ -1162,7 +1113,8 @@ p, h1, h2, h3, h4, h5, h6, ul, li {
   width: 25%;
   min-height: 100px;
   height: 100%;
-  float: left;
+  text-align: center;
+  float: right;
 }
 
 .features__image--mobile {
@@ -2728,15 +2680,17 @@ p, h1, h2, h3, h4, h5, h6, ul, li {
 }
 
 .otherexp {
-  padding-left: 150px;
-  margin-top: 280px;
+  padding-left: auto;
+  margin-top: 5%;
   width: 90%;
+  float: left;
 }
 
 .otherlicence {
-  padding-left: 150px;
-  margin-top: 160px;
+  padding-left: auto;
+  margin-top: 5%;
   width: 90%;
+  float: left;
 }
 
 .an_fade {
